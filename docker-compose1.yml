@@ -26,7 +26,7 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
     volumes:
-      - ../files/postgres-data:/var/lib/postgresql/data
+      - ../files/postgres-data:/var/lib/postgresql
       - ../files/migrations:/docker-entrypoint-initdb.d
     ports:
       - "5437:5432"
