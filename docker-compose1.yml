@@ -6,7 +6,7 @@ services:
     environment:
       DATABASE_URL: postgresql://postgres:postgres@postgres:5432/remote_coding_agent
     ports:
-      - "3000:3000"
+      - "3007:3000"
     volumes:
       - ../files/workspace:/workspace
     restart: unless-stopped
